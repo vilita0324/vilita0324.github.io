@@ -15,13 +15,19 @@ function draw() {
         rect(50, 100, 150, 2);
     if (choice == 2)
         rect(50, 150, 150, 2);
+    if (choice == 3)
+        rect(50, 200, 150, 2);
+    if (choice == 4)
+        rect(50, 250, 150, 2);
     text("吃飯", 50, 50);
     text("吃麵", 50, 100);
     text("不要吃", 50, 150);
+    text("吃麵包", 50, 200);
+    text("吃餅乾", 50, 250);
 }
 
 function mousePressed() {
-    choice = int(random(3));
+    choice = int(random(5));
 }
 
 function initializeFields() {
